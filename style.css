@@ -417,7 +417,7 @@ transition: all 0.5s ease;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #000;
+    background-color:var(--bg-color);
     color: #fff;
 }
 
@@ -426,7 +426,7 @@ transition: all 0.5s ease;
     width: 90%;
     max-width: 2000px;
     height: 80vh;
-    background:var(--snd-bg-color);
+    background:var(--bg-color);
     border-radius: 45px;
     overflow: hidden;
     
