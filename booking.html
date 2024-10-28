@@ -6,7 +6,12 @@
   <title>Fitness Booking Slot Form</title>
   <link rel="stylesheet" href="style.css">
 
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 
@@ -40,10 +45,10 @@
 
   <section class="booking">
     <div class="booking-content">
-      <div class="left-section">
+      <div class="left-section" data-aos="zoom-in-down">
         <img src="images/booking slots.jpg" alt="Fitness" class="fitness-image">
     </div>
-    <div class="right-section">
+    <div class="right-section" data-aos="zoom-in-up">
         <div class="booking-form-container">
             <h2>Book your<span> Fitness Slot</span> </h2>
             <form class="booking-form">
@@ -138,7 +143,13 @@
 
    </footer>
 
-
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+     AOS.init({
+        offset: 300,
+        duration:1400,
+     });
+   </script>
 
 
 

@@ -1,3 +1,23 @@
+let menu = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+
+menu.onclick = () => {
+    menu.classList.toggle('bx-x'); // Toggle icon change
+    navbar.classList.toggle('active'); // Toggle navbar visibility
+}
+
+// Close menu when a link is clicked
+navbar.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+        navbar.classList.remove('active'); // Hide navbar
+        menu.classList.remove('bx-x'); // Reset icon
+    });
+});
+
+window.onscroll = () => {
+    menu.classList.remove('bx-x');
+    navbar.classList.remove('active');
+}
 
 
 
@@ -44,6 +64,16 @@ document.getElementById('contact-form').addEventListener('submit', function(even
   });
 });
 
+
+// typing test code
+
+const typed = new Typed ('.multiple-text',{
+  strings:['Physical Fitness','Weight Gain', 'Strength Training','Fat Lose','Weight Lifting', 'Rnning'], typingSpeed:60,
+  backSpeed:60,
+  backDelay:1000,
+  loop:true,
+
+});
 
 
 
