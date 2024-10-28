@@ -68,7 +68,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
 // typing test code
 
 const typed = new Typed ('.multiple-text',{
-  strings:['Physical Fitness','Weight Gain', 'Strength Training','Fat Lose','Weight Lifting', 'Rnning'], typingSpeed:60,
+  strings:['Physical Fitness','Weight Gain', 'Strength Training','Fat Lose','Weight Lifting', 'Running'], typingSpeed:60,
   backSpeed:60,
   backDelay:1000,
   loop:true,

@@ -411,7 +411,37 @@ transition: all 0.5s ease;
 .hidden {
     display: none;
 }
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .contact-sending {
+        padding: 20px; /* Increased padding for mobile */
+        border-radius: 20px; /* Adjusted border radius for smaller screens */
+    }
 
+    .contact-boxs .heading h2 {
+        font-size: 20px; /* Reduced heading size */
+        padding: 10px; /* Reduced padding */
+    }
+
+    #contact-form {
+        padding: 1rem 5%; /* Reduced padding for mobile */
+    }
+
+    #contact-form input[type="text"],
+    #contact-form input[type="tel"],
+    #contact-form input[type="email"],
+    #contact-form textarea {
+        font-size: 14px; /* Adjust font size for inputs */
+    }
+
+    #contact-form .btn {
+        font-size: 14px; /* Reduce button font size */
+    }
+
+    #result {
+        font-size: 12px; /* Adjust notification font size */
+    }
+}
 
 
 
@@ -553,7 +583,47 @@ select:focus {
 .hidden {
     display: none;
 }
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .booking-content {
+        flex-direction: column; /* Stack elements vertically */
+        height: auto; /* Adjust height for mobile */
+    }
 
+    .left-section {
+        flex: 1; /* Use equal width for left and right sections */
+        height: 200px; /* Set a fixed height for the image section */
+    }
+
+    .left-section .fitness-image {
+        height: 100%; /* Ensure image takes full height of its section */
+        border-radius: 20px; /* Adjust border radius for smaller screens */
+    }
+
+    .right-section {
+        flex: 1; /* Use equal width for left and right sections */
+        padding: 10px; /* Reduce padding */
+    }
+
+    .booking-form-container h2 {
+        font-size: 2.5rem; /* Reduce heading size */
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    select {
+        font-size: 1.2rem; /* Adjust font size for inputs */
+    }
+
+    .book-now-btn {
+        font-size: 1.5rem; /* Reduce button font size */
+    }
+
+    .notification {
+        font-size: 1.5rem; /* Adjust notification font size */
+    }
+}
 
   /* footer section code */
   footer{
